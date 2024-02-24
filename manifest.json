@@ -1,0 +1,21 @@
+{
+    "short_name": "LearnDo",
+    "name": "LearnDo Connecting Minds",
+    "icons": [
+      {
+        "src": "/LearnDo/public/assets/images/LogoR.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/LearnDo/public/assets/images/LogoTR.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      }
+    ],
+    "start_url": "/LearnDo/",
+    "background_color": "#3367D6",
+    "display": "standalone",
+    "scope": "/LearnDo/",
+    "theme_color": "#3367D6"
+  }

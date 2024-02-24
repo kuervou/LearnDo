@@ -1,0 +1,11 @@
+composer require league/oauth2-linkedin
+
+composer require google/apiclient:"^2.0"
+
+composer require paypal/rest-api-sdk-php
+
+composer require cboden/ratchet
+
+composer dump-autoload (segun hernan no va siempre)
+
+composer require mpdf/mpdf

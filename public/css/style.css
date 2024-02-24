@@ -1,0 +1,617 @@
+:root {
+  --main-color: #106474;
+  --secondary-color: #111B22;
+  --terciary-color: #147E9F;
+  --light-color: #eeeeee80;
+  --dark-color: rgba(0, 0, 0, 0.1);
+  --spacing: 15px;
+}
+
+.progress-bar {
+  background-color: var(--main-color);
+}
+
+.bg-custom {
+  background-color: var(--terciary-color)
+}
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  display: flex;
+  min-height: 100%;
+}
+
+body {
+  flex: 1;
+  background-image: linear-gradient(135deg, var(--secondary-color) 0%, var(--terciary-color) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  width: 100%;
+  max-width: 330px;
+  /* Se mantiene para .form */
+  padding: var(--spacing);
+  margin: auto;
+  background: var(--light-color);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px var(--dark-color);
+}
+
+.form {
+  max-width: 550px;
+  /* Se mantiene para .form */
+}
+
+.login-logo,
+.course-card-img {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.login-logo img {
+  max-width: 200px;
+}
+
+.form-control {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: none;
+  border-color: var(--main-color);
+}
+
+.btn-primary {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.btn-custom {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: white ;
+}
+
+.btn-custom:hover,
+.btn-custom:focus {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: white;
+}
+/* A partir de aquí el código se mantiene igual */
+
+.homepage-container {
+  position: relative;
+  min-height: 100%;
+  background-image: url('../images/bg-home.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(78, 204, 163, 0.4);
+}
+
+.glassmorphism {
+  background: rgba(238, 238, 238, 0.5);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.card-img-top,
+.course-img {
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .card {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.custom-jumbotron {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-material {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+
+  transition: box-shadow 0.3s ease-in-out;
+  background-color: transparent;
+  color: white;
+}
+
+.card-material:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  color: white;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  border: 1px solid white;
+  color: white;
+}
+
+input[type="text"]::placeholder,
+input[type="number"]::placeholder {
+  color: white;
+  opacity: 0.6;
+}
+
+button {
+  border: 1px solid white;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+.fullHeight {
+  height: 100%;
+}
+
+.course-card {
+  width: 18rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Estilos de los foros */
+/* Estilos para el foro */
+.forum {
+  background-color: #333333;
+  padding: 20px;
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+/* Estilos para las cajas de discusión */
+.discussion-box {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #222222;
+  border-radius: 8px;
+}
+
+.discussion-box h2 {
+  font-size: 24px;
+  margin-top: 0;
+  color: #ffffff;
+}
+
+.discussion-box p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #cccccc;
+}
+
+/* Estilos para los comentarios */
+.comment {
+  position: relative;
+  /* Añadido para alinear el botón de respuesta */
+  padding: 10px;
+  background-color: #444444;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  /* Ajusta el valor según tu preferencia */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.comment h3 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.comment p {
+  font-size: 14px;
+  margin-bottom: 0;
+  color: #cccccc;
+}
+
+.comment .reply-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 4px 8px;
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.comment .reply-button:hover {
+  background-color: #45a049;
+}
+
+/* Estilos para las respuestas */
+.reply-comment {
+  margin-left: 60px;
+  /* Ajusta el valor según tu preferencia */
+  margin-top: 10px;
+  /* Ajusta el valor según tu preferencia */
+  background-color: #666666;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.reply-comment h3 {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.reply-comment p {
+  font-size: 14px;
+  margin-bottom: 0;
+  color: #cccccc;
+}
+
+/* Estilos para el formulario de respuesta */
+.reply-options form {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.reply-options input[type="text"] {
+  flex: 1;
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid #777777;
+  color: #ffffff;
+  background-color: #222222;
+}
+
+.reply-options button {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.reply-options button:hover {
+  background-color: #45a049;
+}
+
+.reply {
+  margin-top: 10px;
+  /* Ajusta el valor según tu preferencia */
+}
+
+.reply-button {
+  align-self: flex-end;
+  position: relative;
+  /* Agregado */
+}
+
+/* Estilos para el contenedor */
+.lista-preguntas {
+  background-color: #000000;
+  padding: 20px;
+  border: 1px solid #302f2f;
+  border-radius: 5px;
+}
+
+/* Estilos para el encabezado */
+.modal-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Estilos para la lista */
+#listaPreguntas {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Estilos para los elementos de la lista */
+#listaPreguntas li {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Estilos para el texto de la pregunta */
+#listaPreguntas li h5 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+/* Estilos para las opciones */
+#listaPreguntas li p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Estilos para la lista*/
+.lista-preguntas p {
+  color: white;
+  padding-left: 30px;
+}
+
+.lista-preguntas h5 {
+  color: white;
+}
+
+.container-header-offline{
+  justify-content: center !important;
+}
+
+/* Sidebars */
+main {
+  height: 100vh;
+  height: -webkit-fill-available;
+  max-height: 100vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.dropdown-toggle { outline: 0; }
+
+.btn-toggle {
+  padding: .25rem .5rem;
+  font-weight: 600;
+  color: var(--bs-emphasis-color);
+  background-color: transparent;
+}
+.btn-toggle:hover,
+.btn-toggle:focus {
+  color: rgba(var(--bs-emphasis-color-rgb), .85);
+  background-color: var(--bs-tertiary-bg);
+}
+
+.btn-toggle::before {
+  width: 1.25em;
+  line-height: 0;
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+  transition: transform .35s ease;
+  transform-origin: .5em 50%;
+}
+
+[data-bs-theme="dark"] .btn-toggle::before {
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%28255,255,255,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+}
+
+.btn-toggle[aria-expanded="true"] {
+  color: rgba(var(--bs-emphasis-color-rgb), .85);
+}
+.btn-toggle[aria-expanded="true"]::before {
+  transform: rotate(90deg);
+}
+
+.btn-toggle-nav a {
+  padding: .1875rem .5rem;
+  margin-top: .125rem;
+  margin-left: 1.25rem;
+}
+.btn-toggle-nav a:hover,
+.btn-toggle-nav a:focus {
+  background-color: var(--bs-tertiary-bg);
+}
+
+.scrollarea {
+  overflow-y: auto;
+}
+
+
+/*Estilos chats*/
+.chat-container {
+  padding: 20px;
+  width: auto;
+}
+
+.chat-messages {
+  overflow-y: scroll; /* Agregar barra de desplazamiento vertical si es necesario */
+}
+
+/* Estilos de los mensajes */
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 40%; /* Ancho máximo del mensaje para evitar que ocupe todo el espacio */
+  word-wrap: break-word; /* Romper palabras largas si exceden el ancho máximo */
+  width: fit-content; /* Ajustar el ancho del mensaje al contenido */;
+  
+}
+
+.right {
+  background-color: #2e2e2e; /* Color de fondo para mensajes del usuario logueado */
+  margin-left: auto;
+  text-align: end;
+}
+
+.left {
+  background-color: #3f3f3f; /* Color de fondo para mensajes del usuario con el que se está chateando */
+  align-self: flex-start;
+}
+
+/* Estilos de la lista de mensajes */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Estilos de desplazamiento */
+::-webkit-scrollbar {
+  width: 8px; /* Ancho de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color de la barra de desplazamiento */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #333; /* Color del fondo de la barra de desplazamiento */
+}
+
+.input-container {
+  margin-top: 20px;
+  display: flex;
+}
+
+.message-input {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2e2e2e; /* Color de fondo de la caja de texto */
+  color: #ffffff; /* Color de texto claro */
+  resize: auto; /* Permite el redimensionamiento vertical */
+  overflow-y: auto; /* Añade una barra de desplazamiento vertical si es necesario */
+}
+
+
+.send-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff; /* Color de fondo del botón */
+  color: #ffffff; /* Color de texto claro */
+  margin-left: 10px;
+}
+
+
+.mr-2{
+  margin-right: .5rem !important;
+}
+
+/* Estilos de las valoraciones */
+.rating {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.rating span {
+  display: inline-block;
+  transition: color 0.3s;
+}
+
+.rating span:hover,
+.rating span.selected {
+  color: gold;
+}
+
+/* Estilos para Chats en vivo */ 
+p.user-message {
+  text-align: right;
+}
+
+/* Estilos para los mensajes */
+.message-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.message-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.message-user {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.message-text {
+  flex-grow: 1;
+  word-wrap: break-word;
+  /* Añade esta línea */
+  overflow-wrap: break-word;
+  /* Y esta línea */
+}
+
+
+/* Estilos para los mensajes del usuario */
+.user-message {
+  justify-content: flex-end;
+}
+
+.user-message .message-pic {
+  order: 1;
+  margin-left: 1rem;
+  margin-right: 0;
+}
+
+.user-message .message-user {
+  order: 2;
+}
+
+.user-message .message-text {
+  order: 0;
+}
+
+
+
+
+
